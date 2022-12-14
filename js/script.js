@@ -2,8 +2,22 @@ $('h2').css({color: '#FFAF43'})
 
 $('h3').css({color: '#FFAF43'})
 
-$('<input/>').attr({ type: 'text', id: 'test', name: 'test'}).appendTo('#form');
+$('input').css({margin:'20px 10px 20px 300px', width:'250px', height: '40px'})
 
-$('#test').focus(function(e) {
-    alert('Focus');
-});
+
+$(document).ready(function(){
+    $('#button').click(
+        function(){
+            var input = $('input[name=skills]').val();
+            $('ul').append('<li>'+ input + '</li>');
+        }
+    )
+    $(document).on('click', 'li',function(){
+        $(this).toggleClass('strike').fadeOut(50)
+    })
+    $('input').focus(function(){
+     $(this).val(' ');
+    })
+
+
+})

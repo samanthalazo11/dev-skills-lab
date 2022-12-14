@@ -21,3 +21,23 @@ h2{
 h3{
     text-align: center;
 }
+
+input{
+    border: 4px solid #94C47D;
+
+}
+
+.button{
+    color: #94C47D;
+    display: inline-block;
+    border: 4px solid #94C47D;
+    height: 40px;
+    background-color: white;
+
+}
+
+ul li{
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+}
